@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo</title>
+</head>
+<body>
+    <form action="createtodo" method="POST">
+        <input type="text" name="firstName" placeholder="first Name"><br>
+        <input type="email" name="email" placeholder="email address"><br>
+        <input type="gender" name="gender" placeholder="female"><br><br>
+        <button type="button">submit</button>
+    </form>
+
+    <ul class="todoItems">
+        <%for(let i = 0; i< todos.length; i++ ){%>
+            <li>
+                <% if(todos[i].status == true){%>
+                    <span id="completed"><%= todos[i].status %></span>
+                <% }else{%>
+                    <span ><%=todos[i].firstName %></span>
+                    <span><%=todos[i].email %></span>
+                <%} %>
+                
+            </li>
+        <%}
+         %>
+    </ul>
+</body>
+</html>
