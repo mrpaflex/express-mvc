@@ -1,9 +1,9 @@
 //const bodyParser = require('body-parser');
 const express = require('express')
 const app = express()
-const connectDB = require('./config/database.js');
-const serverhomesRoutes = require('./serverRoute/home.js');
-const servertodosRoutes = require('./serverRoute/todos.js');
+const connectDB = require('./config/database');
+const serverhomesRoutes = require('./serverRoute/home');
+const servertodosRoutes = require('./serverRoute/todos');
 
 const PORT = 3030;
 require('dotenv').config({path: './config.env'})

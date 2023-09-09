@@ -20,4 +20,4 @@ const Todochema = new mongoose.Schema({
     }
 })
 
-module.exports = mongoose.model('allcollect', Todochema)
+module.exports = mongoose.model('mydbcollection', Todochema)
